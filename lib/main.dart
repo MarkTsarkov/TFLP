@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'global/widgets/header.dart';
-import 'global/widgets/logo.dart';
 import 'homePage/homePage.dart';
 
 void main() {
