@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'homePage/homePage.dart';
+import 'package:tflp/router/routes.dart';
+import 'package:tflp/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'TeamFinder',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      routes: {
-        '/': (context) => const HomePage(),
-      },
+      theme: theme,
+      routes: routes
     );
   }
 }
